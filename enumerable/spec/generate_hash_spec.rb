@@ -11,7 +11,7 @@ describe GenerateHash do
   end
 
   context 'when array that pairs of key and value was given' do
-    subject { GenerateHash.method_bar [['key1', 'value1'], ['key2', 'value2'], ['key3', 'value3']] }
+    subject { GenerateHash.by_nested_array [['key1', 'value1'], ['key2', 'value2'], ['key3', 'value3']] }
     it { should == expected_hash }
   end
 

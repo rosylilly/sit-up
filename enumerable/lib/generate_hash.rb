@@ -4,7 +4,7 @@ class GenerateHash
     Hash[*source_array]
   end
 
-  def self.method_bar(source_array)
+  def self.by_nested_array(source_array)
     Hash[*source_array.flatten]
   end
 
