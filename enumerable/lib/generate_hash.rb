@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 class GenerateHash
-  def self.method_foo(source_array)
+  def self.by_array(source_array)
     Hash[*source_array]
   end
 

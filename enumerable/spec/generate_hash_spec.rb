@@ -6,7 +6,7 @@ describe GenerateHash do
   end
 
   context 'when array that key, value, key, value... was given' do
-    subject { GenerateHash.method_foo ['key1', 'value1', 'key2', 'value2', 'key3', 'value3'] }
+    subject { GenerateHash.by_array ['key1', 'value1', 'key2', 'value2', 'key3', 'value3'] }
     it { should == expected_hash }
   end
 
