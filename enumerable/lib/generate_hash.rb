@@ -8,7 +8,7 @@ class GenerateHash
     Hash[*source_array.flatten]
   end
 
-  def self.method_baz(keys_array, values_array)
+  def self.by_keys_and_values(keys_array, values_array)
     Hash[*[keys_array, values_array].transpose.flatten]
   end
 end

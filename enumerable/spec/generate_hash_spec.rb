@@ -16,7 +16,7 @@ describe GenerateHash do
   end
 
   context 'when array of keys and array of values was given' do
-    subject { GenerateHash.method_baz ['key1', 'key2', 'key3'], ['value1', 'value2', 'value3'] }
+    subject { GenerateHash.by_keys_and_values ['key1', 'key2', 'key3'], ['value1', 'value2', 'value3'] }
     it { should == expected_hash }
   end
 end
