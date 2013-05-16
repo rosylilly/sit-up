@@ -6,5 +6,14 @@
 
 class LunchMembers
   def self.shuffle(members)
+    members.
+      shuffle.
+      each_with_index.
+      partition { |element|
+        element.last.odd?
+      }.
+      map { |group|
+        group.map(&:first)
+      }
   end
 end
