@@ -19,7 +19,7 @@ class TapTap
     end
   end
 
-  def self.method_bar(episodes)
+  def self.characters_by_episodes(episodes)
     {}.tap do |result|
       episodes.each do |episode|
         characters = BIZZARE_CHARACTERS[episode]

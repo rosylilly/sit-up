@@ -24,7 +24,7 @@ describe TapTap do
       }
     end
 
-    subject { TapTap.method_bar(sereies_includes_dio) }
+    subject { TapTap.characters_by_episodes(sereies_includes_dio) }
     it { should == expected_hash }
   end
 end
