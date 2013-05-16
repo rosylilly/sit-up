@@ -2,12 +2,12 @@
 require 'spec_helper'
 
 describe TapTap do
-  describe '.method_foo' do
+  describe '.symbolize_keys' do
     let(:source_hash) do
       { 'foo' => 'bar', 'hoge' => 'piyo' }
     end
 
-    subject { TapTap.method_foo(source_hash) }
+    subject { TapTap.symbolize_keys(source_hash) }
     it { should == { foo: 'bar', hoge:'piyo' } }
   end
 

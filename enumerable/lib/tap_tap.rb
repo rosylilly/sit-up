@@ -11,7 +11,7 @@ class TapTap
     jojolion:             %w[Josuke Yasuho Kira],
   }
 
-  def self.method_foo(collection)
+  def self.symbolize_keys(collection)
     {}.tap do |hash|
       collection.map do |k, v|
         hash[k.to_sym] = v
